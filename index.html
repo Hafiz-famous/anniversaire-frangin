@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire Frère !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Joyeux Anniversaire, Mon Frère !</h1>
+        <p class="message">Je te souhaite tout le bonheur du monde. Voici quelques souvenirs des beaux moments ensemble !</p>
+        <div class="slideshow">
+            <div class="slides">
+                <img src="img/enfant (1) (1).jpeg" alt="Photo d'enfance 1">
+                <img src="img/enfant (2).jpeg" alt="Photo d'enfance 2">
+                <img src="img/enfant.jpeg" alt="Photo d'enfance">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.29 (1) (1).jpeg" alt="Photo d'enfance">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.30 (2).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.31 (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.31 (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.33 (1) (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.33 (2).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.34 (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.35 (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.36 (1) (1).jpeg" alt="jeune">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.36 (2) (1).jpeg" alt="adulte">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.36 (3).jpeg" alt="adulte">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.38 (5).jpeg">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.38 (5).jpeg">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.37 (2) (2).jpeg" alt="adulte">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.27.04 (1).png" alt="adulte">
+                <img src="img/WhatsApp Image 2024-10-17 at 16.10.37 (2) (1).jpeg" alt="adulte">
+            </div>
+        </div>
+        <p class="caption">De l'enfance à aujourd'hui, tu es toujours aussi incroyable <strong>BENEDICTION</strong>!</p>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides")[0].children;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+    </script>
+</body>
+</html>
